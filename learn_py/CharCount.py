@@ -52,8 +52,15 @@ message = '''1In the beginning was the Word, and the Word was with God, and the 
 51And he saith unto him, Verily, verily, I say unto you, Hereafter ye shall see heaven open, and the angels of God ascending and descending upon the Son of man.'''
 
 message = ''.join([i for i in message if not i.isdigit()]) # Remove's any digit from the text.
-count = {}
-for character in message.upper():
-    count.setdefault(character, 0)
-    count[character] = count[character] + 1
-pprint.pprint(count)
+char = 0
+word = 1
+for y in message.upper():
+    char = char + 1
+    if (y == ' '):
+        word = word + 1
+    #count.setdefault(character, 0)
+    #count[character] = count[character] + 1
+print('Number of characters in string:')
+pprint.pprint(char)
+print('Number words in string:')
+pprint.pprint(word)
