@@ -1,4 +1,5 @@
 import pprint
+# We use triple ' to capture all text.
 message = '''1In the beginning was the Word, and the Word was with God, and the Word was God.
 2The same was in the beginning with God.
 3All things were made by him; and without him was not any thing made that was made.
