@@ -2,7 +2,7 @@ import requests
 
 cnamUrl = 'https://api.opencnam.com/v3/phone/'
 myDid = input('Enter DID to check: ')
-if len(myDid) != 11 and myDid.isdigit():
+if len(myDid) != 11 and isinstance(myDid, str):
     print('Please enter valid 11 digit Phone Number')
 myAcct = input('Enter CNAM Account: ')
 myToken = input('Enter Auth: ')
