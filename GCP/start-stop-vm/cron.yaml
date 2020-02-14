@@ -1,0 +1,7 @@
+cron:
+    - description: "starts job"
+      url: /start
+      schedule: 28 of month 00:00
+    - description: "stops job"
+      url: /stop
+      schedule: 2 of month 00:00

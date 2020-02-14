@@ -1,0 +1,10 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+handlers:
+- url: /.*
+  script: startVM.app
+- url: /.*
+  script: stopVM.app
+skip_files:
+  - ^node_modules/.*
